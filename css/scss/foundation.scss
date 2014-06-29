@@ -43,9 +43,82 @@
   "foundation/components/top-bar",
   "foundation/components/type",
   "foundation/components/offcanvas",
-  "foundation/components/visibility";
+  "foundation/components/visibility",
+  "foundation/settings";
+
+
+@font-face {
+font-family: "telegrama";
+src: url(../fonts/telegrama_raw.otf);
+}
+// Landing page
+video {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background-size: cover;
+}
 
 .start-button {
-@include button(rem-calc(40), #970000, true, false, true, false);
-font: rem-calc(40);
+@include button(rem-calc(10), #970000, 30px, false, false, false);
+font-size: 40px;
+color:black;
+font-weight:bold;
+background-color:rgba(#970000, .8);
+button:hover {
+background-color: transparent;
+
+}
+
+}
+
+
+#button-center {
+  margin-top: 230px;
+  margin-bottom: 300px;
+
+}
+
+// Page 1
+.panel {
+  @include panel( rgba(#5D5D5D, .5) );
+}
+
+#c {
+color:black;
+font-size:200px;
+font-family:telegrama_raw;
+
+}
+
+#two {
+color:red;
+font-size:200px;
+
+}
+
+#design {
+font-size:100px;
+font-style:italic;
+}
+// Page 2
+
+
+// Page 3
+.red {
+  width: 200px;
+  height: 300px;
+  background-color: red;
+}
+
+.black {
+  width: 200px;
+  height: 300px;
+  background-color: black;
+}
+
+.white {
+  width: 200px;
+  height: 300px;
+  background-color: white;
 }
