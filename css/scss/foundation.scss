@@ -80,6 +80,11 @@ background-color: transparent;
 }
 
 // Page 1
+
+.full {
+  width: 100%;
+  max-width: 100%; 
+}
 .panel {
   @include panel( rgba(#5D5D5D, .5) );
 }
@@ -102,7 +107,20 @@ font-size:100px;
 font-style:italic;
 }
 // Page 2
+.font{
+  font-family: telegrama_raw;
+  font-size: 7em;
+}
 
+body > div:nth-child(6) > div:nth-child(1) > h3 {
+  font-family: telegrama_raw;
+  font-size: 4em;
+}
+
+body > div:nth-child(6) > div:nth-child(2) > ul > li {
+   font-family: telegrama_raw;
+    font-size: 2em;
+}
 
 // Page 3
 .red {
