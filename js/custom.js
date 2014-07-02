@@ -28,5 +28,4 @@ $(document).ready(function(){
 		.delay(30000)
 		.hide("explode", 5000)
 	});
-
 })
